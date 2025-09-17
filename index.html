@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOU + RECOMPOSIÇÃO | URE-CAIEIRAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .school-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+        }
+        #mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-blue-50">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                                        <img src="https://i.ibb.co/dscRg9Ms/LOGO-URE-CAIEIRAS-2-1.png"  alt="Logo URE-CAIEIRAS" class="h-16 w-auto">
+                    <div>
+                        <h1 class="text-2xl font-bold text-blue-800">SOU + RECOMPOSIÇÃO</h1>
+                        <p class="text-blue-600">URE-CAIEIRAS</p>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex space-x-6">
+                    <a href="https://drive.google.com/file/d/1-et2PZ4CkoHfrzMa50geOBSPcmUoZKND/view?usp=sharing" class="text-blue-800 hover:text-blue-600 font-medium">APRESENTAÇÃO</a>
+                    <a href="https://drive.google.com/file/d/1vCjGvtOLzCGVh49Ju9988xY4R2Xz9eXk/view?usp=sharing" class="text-blue-800 hover:text-blue-600 font-medium">Sobre o Projeto</a>
+                    <a href="https://drive.google.com/file/d/1PfDi3oOgN-HFQeDjfZ3LRuaavmjjBA4w/view?usp=sharing" class="text-blue-800 hover:text-blue-600 font-medium">Documentos</a>
+                    <a href="#escolas" class="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-lg font-medium transition duration-300">
+                        Escolas Participantes
+                    </a>
+                </nav>
+                
+                <button id="menu-toggle" class="md:hidden text-blue-800 focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="bg-gradient-to-r from-blue-700 to-blue-900 py-8">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">SOU + RECOMPOSIÇÃO</h2>
+                <p class="text-blue-100 text-lg max-w-3xl mx-auto">Acompanhe todas as escolas participantes e seus respectivos horários e planilhas de acompanhamento</p>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full z-50">
+        <div class="container mx-auto px-4 py-4">
+            <a href="#inicio" class="block py-2 text-blue-800 hover:text-blue-600 font-medium">Início</a>
+            <a href="#sobre" class="block py-2 text-blue-800 hover:text-blue-600 font-medium">Sobre o Projeto</a>
+            <a href="#documentos" class="block py-2 text-blue-800 hover:text-blue-600 font-medium">Documentos</a>
+            <a href="#escolas" class="block py-2 text-blue-800 hover:text-blue-600 font-medium">Escolas Participantes</a>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="escolas" class="mb-12">
+            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Escolas Participantes</h2>
+            
+            <div class="mb-6">
+                <input type="text" id="school-search" placeholder="🔍 Buscar escola..." 
+                        class="w-full md:w-1/2 px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="schools-container">
+                </div>
+        </section>
+
+        <section id="sobre" class="bg-white rounded-xl shadow-md p-8 mb-12">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Sobre o Projeto SOU + RECOMPOSIÇÃO - Sala de Leitura</h2>
+            <div class="prose max-w-none text-gray-700">
+                <p>Considerando a necessidade de desenvolver e aprimorar a formação integral, com ênfase nas competências e habilidades leitoras e com o objetivo de prover meios para a recuperação e recomposição dos aprendizados dos estudantes com maiores defasagens, visto o cenário de desafio dos desempenhos dos estudantes nos resultados das avaliações internas e externas.</p>
+                
+                <p class="mt-4">O projeto Sou + Recomposição Sala de Leitura tem como objetivo:</p>
+                <ul class="mt-4 list-disc pl-5 space-y-2">
+                    <li>Oferecer apoio diferenciado por níveis de aprendizagem</li>
+                    <li>Recuperar aprendizagens associadas à leitura, escrita e ao letramento</li>
+                    <li>Auxiliar na recuperação, reforço e aprofundamento das aprendizagens</li>
+                    <li>Aprimorar competências ligadas à aquisição do sistema de escrita</li>
+                    <li>Desenvolver a capacidade dos estudantes de ler, compreender e produzir textos</li>
+                </ul>
+
+                <h3 class="text-xl font-bold text-blue-800 mt-6">Modelos de Aplicação</h3>
+                <div class="mt-4 space-y-6">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-blue-700">Modelo de Agrupamento</h4>
+                        <p class="mt-2">Docentes habilitados em Pedagogia, Letras e Ciências Humanas realizam ações de recomposição em 3 aulas semanais, em até 4 turmas, atendendo 10 estudantes por agrupamento.</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-blue-700">Modelo de Apoio</h4>
+                        <p class="mt-2">Docentes não habilitados nas áreas acima realizam ações em formato de apoio em sala nas aulas de Língua Portuguesa, Orientação de Estudos e Redação e Leitura em 2 aulas semanais em até 6 turmas.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-bold text-blue-800 mt-6">Critérios de Enturmação</h3>
+                <p class="mt-2">A seleção dos estudantes considera o desempenho no SARESP 2024 em Língua Portuguesa, podendo também utilizar resultados da Prova Paulista e sondagens pedagógicas que identifiquem dificuldades específicas.</p>
+            </div>
+        </section>
+        
+        <section id="documentos" class="bg-white rounded-xl shadow-md p-8 mb-12">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Documentos e Materiais</h2>
+            <div class="prose max-w-none text-gray-700">
+                <p>Acesse aqui documentos e materiais de apoio para o projeto.</p>
+                <ul class="mt-4 list-disc pl-5 space-y-2">
+                    <li><a href="https://drive.google.com/file/d/1PfDi3oOgN-HFQeDjfZ3LRuaavmjjBA4w/view?usp=sharing" class="text-blue-600 hover:text-blue-800">DOCUMENTO ORIENTADOR (PDF)</a></li>
+                    <li><a href="#" class="text-blue-600 hover:text-blue-800">Modelos de Plano de Aula</a></li>
+                    <li><a href="#" class="text-blue-600 hover:text-blue-800">Recursos Adicionais para Leitura</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <img src="https://i.ibb.co/dscRg9Ms/LOGO-URE-CAIEIRAS-2-1.png"  alt="Logo URE-CAIEIRAS" class="h-16 w-auto">
+                    <p class="mt-2 text-blue-200">Secretaria de Educação do Estado de São Paulo</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-blue-200">URE-CAIEIRAS</p>
+                    <p class="text-blue-200">Projeto SOU + RECOMPOSIÇÃO</p>
+                    <p class="text-blue-200 mt-2">© 2025 Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Data das escolas com URLs fictícias (substitua pelas URLs reais)
+        const schoolsData = [
+            { name: "E.E. ADAIL JARBAS DUCLOS", gradeUrl: "http://exemplo.com/adail_grade", planilhaUrl: "http://exemplo.com/adail_planilha" },
+            { name: "E.E. AFONSO MORENO", gradeUrl: "http://exemplo.com/afonso_grade", planilhaUrl: "http://exemplo.com/afonso_planilha" },
+            { name: "E.E. ALADINO POLON", gradeUrl: "http://exemplo.com/aladino_grade", planilhaUrl: "http://exemplo.com/aladino_planilha" },
+            { name: "E.E. ALBERTO GRAF – CAPITÃO", gradeUrl: "http://exemplo.com/alberto_grade", planilhaUrl: "http://exemplo.com/alberto_planilha" },
+            { name: "E.E. ALBINO FIORE", gradeUrl: "http://exemplo.com/albino_grade", planilhaUrl: "http://exemplo.com/albino_planilha" },
+            { name: "E.E. ALFRIED THEODOR WEISZFLOG", gradeUrl: "http://exemplo.com/alfried_grade", planilhaUrl: "http://exemplo.com/alfried_planilha" },
+            { name: "E.E. ANA MARIA GARRIDO ORLANDIN – PROF.ª", gradeUrl: "http://exemplo.com/anamaria_grade", planilhaUrl: "http://exemplo.com/anamaria_planilha" },
+            { name: "E.E. APARECIDO ROBERTO TONELLOTTI – PROF.", gradeUrl: "http://exemplo.com/aparecido_grade", planilhaUrl: "http://exemplo.com/aparecido_planilha" },
+            { name: "E.E. ARMANDO SESTINI", gradeUrl: "http://exemplo.com/armando_grade", planilhaUrl: "http://exemplo.com/armando_planilha" },
+            { name: "E.E. ARTHUR WEINGRILL", gradeUrl: "http://exemplo.com/arthur_grade", planilhaUrl: "http://exemplo.com/arthur_planilha" },
+            { name: "E.E. AZEVEDO SOARES", gradeUrl: "http://exemplo.com/azevedo_grade", planilhaUrl: "http://exemplo.com/azevedo_planilha" },
+            { name: "E.E. BAIRRO DO ITAIM", gradeUrl: "http://exemplo.com/itaim_grade", planilhaUrl: "http://exemplo.com/itaim_planilha" },
+            { name: "E.E. BAIRRO JUNDIAIZINHO", gradeUrl: "http://exemplo.com/jundiaizinho_grade", planilhaUrl: "http://exemplo.com/jundiaizinho_planilha" },
+            { name: "E.E. BELÉM DA SERRA", gradeUrl: "http://exemplo.com/belem_grade", planilhaUrl: "http://exemplo.com/belem_planilha" },
+            { name: "E.E. BENEDITO APARECIDO TAVARES – PROF.", gradeUrl: "http://exemplo.com/benedito_grade", planilhaUrl: "http://exemplo.com/benedito_planilha" },
+            { name: "E.E. BENEDITO FAGUNDES MARQUES", gradeUrl: "http://exemplo.com/fagundes_grade", planilhaUrl: "http://exemplo.com/fagundes_planilha" },
+            { name: "E.E. BUENO DE AZEVEDO FILHO – PROF.", gradeUrl: "http://exemplo.com/bueno_grade", planilhaUrl: "http://exemplo.com/bueno_planilha" },
+            { name: "E.E. CARLOS AUGUSTO DE PÁDUA FLEURY – PROF.", gradeUrl: "http://exemplo.com/carlos_grade", planilhaUrl: "http://exemplo.com/carlos_planilha" },
+            { name: "E.E. CELESTINA VALENTE LENGENFELDER – PROF.ª", gradeUrl: "http://exemplo.com/celestina_grade", planilhaUrl: "http://exemplo.com/celestina_planilha" },
+            { name: "E.E. CHÁCARA CAMPONESA/ Jd Vassouras", gradeUrl: "http://exemplo.com/chacara_grade", planilhaUrl: "http://exemplo.com/chacara_planilha" },
+            { name: "E.E. DOMINGOS CAMBIAGHI – PROF.", gradeUrl: "http://exemplo.com/domingos_grade", planilhaUrl: "http://exemplo.com/domingos_planilha" },
+            { name: "E.E. ÉLCIO JOSÉ PEREIRA COTRIM – PROF.", gradeUrl: "http://exemplo.com/elcio_grade", planilhaUrl: "http://exemplo.com/elcio_planilha" },
+            { name: "E.E. ELVIRA PARADA MANGA – PROF.ª", gradeUrl: "http://exemplo.com/elvira_grade", planilhaUrl: "http://exemplo.com/elvira_planilha" },
+            { name: "E.E. FRANCISCO GONÇALVES VIEIRA – PROFº", gradeUrl: "http://exemplo.com/francisco_grade", planilhaUrl: "http://exemplo.com/francisco_planilha" },
+            { name: "E.E. HERMELINA DE ALBUQUERQUE PASSARELLA – PROF.ª", gradeUrl: "http://exemplo.com/hermelina_grade", planilhaUrl: "http://exemplo.com/hermelina_planilha" },
+            { name: "E.E. IRACI SARTORI VIEIRA DA SILVA – PROF.ª", gradeUrl: "http://exemplo.com/iraci_grade", planilhaUrl: "http://exemplo.com/iraci_planilha" },
+            { name: "E.E. ISAÍAS LUIZ MATIAZZO", gradeUrl: "http://exemplo.com/isaias_grade", planilhaUrl: "http://exemplo.com/isaias_planilha" },
+            { name: "E.E. ISAURA DE MIRANDA BOTTO – PROFª", gradeUrl: "http://exemplo.com/isaura_grade", planilhaUrl: "http://exemplo.com/isaura_planilha" },
+            { name: "E.E. ISAURA VALENTINI HANSER – PROFª", gradeUrl: "http://exemplo.com/valentini_grade", planilhaUrl: "http://exemplo.com/valentini_planilha" },
+            { name: "E.E. IVONE DOS ANJOS DA SILVA CAMPOS – PROF.ª", gradeUrl: "http://exemplo.com/ivone_grade", planilhaUrl: "http://exemplo.com/ivone_planilha" },
+            { name: "E.E. JARDIM ALEGRIA II", gradeUrl: "http://exemplo.com/alegria2_grade", planilhaUrl: "http://exemplo.com/alegria2_planilha" },
+            { name: "E.E. JARDIM DAS ROSAS", gradeUrl: "http://exemplo.com/rosas_grade", planilhaUrl: "http://exemplo.com/rosas_planilha" },
+            { name: "E.E. JARDIM SÃO FRANCISCO", gradeUrl: "http://exemplo.com/saofrancisco_grade", planilhaUrl: "http://exemplo.com/saofrancisco_planilha" },
+            { name: "E.E. JARDIM SILVIA II", gradeUrl: "http://exemplo.com/silvia2_grade", planilhaUrl: "http://exemplo.com/silvia2_planilha" },
+            { name: "E.E. JOAQUIM MARQUES DA SILVA SOBRINHO – TTE.", gradeUrl: "http://exemplo.com/joaquim_grade", planilhaUrl: "http://exemplo.com/joaquim_planilha" },
+            { name: "E.E. JOCIMARA VIEIRA DA SILVA – PROF.ª", gradeUrl: "http://exemplo.com/jocimara_grade", planilhaUrl: "http://exemplo.com/jocimara_planilha" },
+            { name: "E.E. JOSÉ CARLOS DA SILVA JUNIOR", gradeUrl: "http://exemplo.com/josecarlos_grade", planilhaUrl: "http://exemplo.com/josecarlos_planilha" },
+            { name: "E.E. JOSÉ DE BARROS MARTINS – EDITOR", gradeUrl: "http://exemplo.com/barros_grade", planilhaUrl: "http://exemplo.com/barros_planilha" },
+            { name: "E.E. JOSÉ PARADA – PROF.", gradeUrl: "http://exemplo.com/parada_grade", planilhaUrl: "http://exemplo.com/parada_planilha" },
+            { name: "E.E. JOSÉ ROBERTO MELCHIOR – DR.", gradeUrl: "http://exemplo.com/melchior_grade", planilhaUrl: "http://exemplo.com/melchior_planilha" },
+            { name: "E.E. KÁTIA MARIA TARIFA LEME TONELLI – PROF.ª", gradeUrl: "http://exemplo.com/katia_grade", planilhaUrl: "http://exemplo.com/katia_planilha" },
+            { name: "E.E. LENITA CORRÊA CAMARGO – PROF.ª", gradeUrl: "http://exemplo.com/lenita_grade", planilhaUrl: "http://exemplo.com/lenita_planilha" },
+            { name: "E.E. LUIZ ALEXANDRE DOS SANTOS – VEREADOR", gradeUrl: "http://exemplo.com/luiz_alexandre_grade", planilhaUrl: "http://exemplo.com/luiz_alexandre_planilha" },
+            { name: "E.E. LYDIA SCALET WALKER – PROF.ª", gradeUrl: "http://exemplo.com/lydia_grade", planilhaUrl: "http://exemplo.com/lydia_planilha" },
+            { name: "E.E. MARIA ZEZA GOMES DE OLIVEIRA", gradeUrl: "http://exemplo.com/marikazeza_grade", planilhaUrl: "http://exemplo.com/marikazeza_planilha" },
+            { name: "E.E. MARIO TOLEDO DE MORAES – DR.", gradeUrl: "http://exemplo.com/mario_grade", planilhaUrl: "http://exemplo.com/mario_planilha" },
+            { name: "E.E. NAIR HANNICKEL ROMARO", gradeUrl: "http://exemplo.com/nair_grade", planilhaUrl: "http://exemplo.com/nair_planilha" },
+            { name: "E.E. NELSON MANZANARES – DR.", gradeUrl: "http://exemplo.com/nelson_grade", planilhaUrl: "http://exemplo.com/nelson_planilha" },
+            { name: "E.E. NIDE ZAIM CARDOSO – PROF.ª", gradeUrl: "http://exemplo.com/nide_grade", planilhaUrl: "http://exemplo.com/nide_planilha" },
+            { name: "E.E. ODARICO OLIVEIRA NASCIMENTO – PROF.", gradeUrl: "http://exemplo.com/odarico_grade", planilhaUrl: "http://exemplo.com/odarico_planilha" },
+            { name: "E.E. OTTO WEISZFLOG", gradeUrl: "http://exemplo.com/otto_grade", planilhaUrl: "http://exemplo.com/otto_planilha" },
+            { name: "E.E. OZILDE ALBUQUERQUE PASSARELLA – DR.", gradeUrl: "http://exemplo.com/ozilde_grade", planilhaUrl: "http://exemplo.com/ozilde_planilha" },
+            { name: "E.E. PARQUE CENTO E VINTE II", gradeUrl: "http://exemplo.com/parque_120_grade", planilhaUrl: "http://exemplo.com/parque_120_planilha" },
+            { name: "E.E. PAULO DUARTE", gradeUrl: "http://exemplo.com/paulo_duarte_grade", planilhaUrl: "http://exemplo.com/paulo_duarte_planilha" },
+            { name: "E.E. PEDRO GALRÃO DO NASCIMENTO", gradeUrl: "http://exemplo.com/pedro_galrao_grade", planilhaUrl: "http://exemplo.com/pedro_galrao_planilha" },
+            { name: "E.E. PEDRO LELIS DE SOUZA – PREFEITO", gradeUrl: "http://exemplo.com/pedro_lelis_grade", planilhaUrl: "http://exemplo.com/pedro_lelis_planilha" },
+            { name: "E.E. PEDRO PAULO AGUIAR", gradeUrl: "http://exemplo.com/pedro_paulo_grade", planilhaUrl: "http://exemplo.com/pedro_paulo_planilha" },
+            { name: "E.E. PIETRO PETRI", gradeUrl: "http://exemplo.com/pietro_petri_grade", planilhaUrl: "http://exemplo.com/pietro_petri_planilha" },
+            { name: "E.E. RITUCO MITANI – PROF.ª", gradeUrl: "http://exemplo.com/rituco_grade", planilhaUrl: "http://exemplo.com/rituco_planilha" },
+            { name: "E.E. ROGÉRIO LEVORIN – PROF.", gradeUrl: "http://exemplo.com/rogerio_grade", planilhaUrl: "http://exemplo.com/rogerio_planilha" },
+            { name: "E.E. SUZANA DIAS", gradeUrl: "http://exemplo.com/suzana_grade", planilhaUrl: "http://exemplo.com/suzana_planilha" },
+            { name: "E.E. ULYSSES SANCHES RAMIRES – PROF.", gradeUrl: "http://exemplo.com/ulysses_grade", planilhaUrl: "http://exemplo.com/ulysses_planilha" },
+            { name: "E.E. VINCENZO LOBASSI", gradeUrl: "http://exemplo.com/vincenzo_grade", planilhaUrl: "http://exemplo.com/vincenzo_planilha" },
+            { name: "E.E. WALTER RIBAS DE ANDRADE – PROF.", gradeUrl: "http://exemplo.com/walter_grade", planilhaUrl: "http://exemplo.com/walter_planilha" },
+            { name: "E.E. WALTHER WEISZFLOG", gradeUrl: "http://exemplo.com/walther_grade", planilhaUrl: "http://exemplo.com/walther_planilha" },
+            { name: "E.E. ZILTON BICUDO – PROF.", gradeUrl: "http://exemplo.com/zilton_grade", planilhaUrl: "http://exemplo.com/zilton_planilha" },
+            { name: "E.E. OLINDO DÁRTORA – DR.", gradeUrl: "http://exemplo.com/olindo_grade", planilhaUrl: "http://exemplo.com/olindo_planilha" }
+        ];
+
+        // Function to generate school cards
+        function generateSchoolCards(filter = '') {
+            const container = document.getElementById('schools-container');
+            container.innerHTML = '';
+            
+            schoolsData.filter(school => 
+                school.name.toLowerCase().includes(filter.toLowerCase())
+            ).forEach(school => {
+                const card = document.createElement('div');
+                card.className = 'school-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300';
+                card.innerHTML = `
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="text-4xl mr-4">🏫</span>
+                            <h3 class="text-xl font-semibold text-blue-800 cursor-pointer school-name">${school.name}</h3>
+                        </div>
+                        <div class="school-links hidden mt-4 space-y-2">
+                            <a href="${school.gradeUrl}" target="_blank" class="flex items-center text-blue-600 hover:text-blue-800">
+                                <i data-feather="calendar" class="mr-2"></i> Grade de Horário
+                            </a>
+                            <a href="${school.planilhaUrl}" target="_blank" class="flex items-center text-blue-600 hover:text-blue-800">
+                                <i data-feather="file-text" class="mr-2"></i> Planilha de Acompanhamento
+                            </a>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+            
+            // Reattach click handlers
+            document.querySelectorAll('.school-name').forEach(name => {
+                name.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const links = this.closest('.school-card').querySelector('.school-links');
+                    links.classList.toggle('hidden');
+                    
+                    // Close other open cards
+                    document.querySelectorAll('.school-links').forEach(link => {
+                        if (link !== links && !link.classList.contains('hidden')) {
+                            link.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+            
+            feather.replace();
+        }
+
+        // Initialize AOS
+        AOS.init();
+        
+        // Mobile Menu Toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Initial generation
+        generateSchoolCards();
+
+        // Search functionality
+        document.getElementById('school-search').addEventListener('input', function(e) {
+            generateSchoolCards(e.target.value);
+        });
+
+    </script>
+</body>
+</html>
